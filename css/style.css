@@ -27,6 +27,15 @@ section.text {
     gap: 10px;
 }
 
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+.input > label {
+    font-weight: bolder;
+}
+
 .text textarea {
     width: 100%;
     height: 50vh;
@@ -35,16 +44,27 @@ section.text {
     padding: 5px;
 }
 
+select {
+    padding: 10px;
+}
+
 button {
     background-color: blue;
     color: white;
     padding: 10px;
     border: none;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 section.sound {
     padding-top: 10px;
+    border-top: 2px dashed rgba(0, 0, 0, 0.233);
+    margin-top: 10px;
+}
+
+section > audio {
+    width: 100%;
 }
 
 footer {

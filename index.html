@@ -13,11 +13,25 @@
     </header>
     <main>
         <section class="text">
-            Texto:
-            <textarea name="text" id="text" placeholder="Digite alguma coisa"></textarea>
+
+            <div class="input">
+                <label for="text">Texto:</label>
+                <textarea name="text" id="text" placeholder="Digite alguma coisa"></textarea>
+            </div>
+
+            <div class="input">
+                <label for="idioma">Idioma:</label> 
+                <select name="idioma">
+                    <option value="pt-br" selected>Português</option>
+                    <option value="en-us">Inglês</option>
+                </select>
+            </div>
             
-            Velocidade da Voz:
-            <input type="range" name="velocidade" id="" min="0" max="10">
+            <div class="input">
+                <label for="">Velocidade da Voz:</label>
+                <input type="range" name="velocidade" id="" min="0" max="10">
+            </div>
+
             <button>Gerar Voz</button>
         </section>
 
@@ -28,7 +42,7 @@
         </section>
     </main>
     <footer>
-        <p>Danilo Santana</p>
+        <p>Danilo Santana; &copy; <script>document.write(new Date().getFullYear())</script>;</p>
     </footer>
 
     <script src="js/script.js"></script>
